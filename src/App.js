@@ -1,10 +1,14 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import './App.css';
-import TodoApp from './components/TodoApp';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/TodoApp';
 
 function App() {
   return (
     <div className="App">
-      <TodoApp />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }

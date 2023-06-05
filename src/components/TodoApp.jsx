@@ -4,9 +4,11 @@ import TodosLogic from './TodosLogic';
 
 export default function TodoApp() {
   return (
-    <>
-      <Header />
-      <TodosLogic />
-    </>
+    <div className="wrapper">
+      <div className="todos">
+        <Header />
+        <TodosLogic />
+      </div>
+    </div>
   );
 }
